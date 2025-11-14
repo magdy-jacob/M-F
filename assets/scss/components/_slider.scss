@@ -1,0 +1,350 @@
+.arrow-btn {
+    &.style1 {
+        position: absolute;
+        bottom: 80px;
+        right: 0;
+        .slider-prev,
+        .slider-next {
+            width: 48px;
+            height: 48px;
+            text-align: center;
+            border-radius: 24px;
+            background: #F5F5F5;
+            color: #CCCCCC;
+            transition: all 0.4s;
+            -webkit-transition: all 0.4s;
+            -moz-transition: all 0.4s;
+            -ms-transition: all 0.4s;
+            -o-transition: all 0.4s;
+        }
+    }
+    &.style2 {
+        position: relative;
+        .slider-prev {
+            position: absolute;
+            left: 500px;
+            bottom: -120px;
+            z-index: 9;
+            width: 60px;
+            height: 60px;
+            text-align: center;
+            border-radius: 50%;
+            background: $white;
+            color: $black;
+            box-shadow: 0px 6px 50px rgba(37, 37, 37, 0.05);
+            border: 1px solid #E1E1E1;
+            transition: all 0.4s;
+            -webkit-transition: all 0.4s;
+            -moz-transition: all 0.4s;
+            -ms-transition: all 0.4s;
+            -o-transition: all 0.4s;
+            @include breakpoint(max-xxl){
+                left: 430px;
+            }
+            @include breakpoint(max-xl){
+                left: 325px;
+            }
+            @include breakpoint(max-lg){
+                left: 208px;
+                bottom: -75px;
+            }
+            @include breakpoint(max-md){
+                left: 113px;
+                bottom: -85px;
+            }
+            @include breakpoint(max-xsmall) {
+                width: 50px;
+                height: 50px;
+                left: 100px;
+            }
+            @include breakpoint(max-xxsmall) {
+                left: 80px;
+            }
+            &:hover {
+                background: $theme-color;
+                color: $black;
+                border: 1px solid $theme-color;
+            }
+        }
+        .slider-next {
+            position: absolute;
+            right: 500px;
+            bottom: -120px;
+            z-index: 9;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: $white;
+            color: $black;
+            box-shadow: 0px 6px 50px rgba(37, 37, 37, 0.05);
+            border: 1px solid #E1E1E1;
+            transition: all 0.4s;
+            -webkit-transition: all 0.4s;
+            -moz-transition: all 0.4s;
+            -ms-transition: all 0.4s;
+            -o-transition: all 0.4s;
+            @include breakpoint(max-xxl){
+                right: 402px;
+            }
+            @include breakpoint(max-xl){
+                right: 325px;
+            }
+            @include breakpoint(max-lg){
+                right: 208px;
+                bottom: -75px;
+            }
+            @include breakpoint(max-md){
+                right: 113px;
+                bottom: -85px;
+            }
+            @include breakpoint(max-xsmall) {
+                width: 50px;
+                height: 50px;
+                right: 100px;
+            }
+            @include breakpoint(max-xxsmall) {
+                right: 80px;
+            }
+            &::before {
+                content: "";
+                width: 130px;
+                height: 1px;
+                background: rgba(0, 0, 0, 0.70);
+                position: absolute;
+                left: -150px;
+                top: 50%;
+                -webkit-transform: translateY(-50%);
+                -ms-transform: translateY(-50%);
+                transform: translateY(-50%);
+                @include breakpoint(max-sm){
+                   display: none;
+                }
+            }
+            &:hover {
+                background: $theme-color;
+                color: $black;
+                border: 1px solid $theme-color;
+            }
+        }
+    }
+    &.style3 {
+        position: relative;
+        z-index: 9999;
+        @include breakpoint(max-xs){
+            display: none;
+        }
+        .slider-prev {
+            position: absolute;
+            left: 0;
+            bottom: 108px;
+            z-index: 9;
+            width: 60px;
+            height: 60px;
+            text-align: center;
+            border-radius: 50%;
+            background: transparent;
+            color: $white;
+            box-shadow: 0px 6px 50px rgba(37, 37, 37, 0.05);
+            border: 1px solid $theme-color;
+            transition: all 0.4s;
+            -webkit-transition: all 0.4s;
+            -moz-transition: all 0.4s;
+            -ms-transition: all 0.4s;
+            -o-transition: all 0.4s;
+            @include breakpoint(max-xl){
+                bottom: 50px;
+            }
+            @include breakpoint(max-lg){
+                bottom: 35px;
+            }
+            &::after {
+                content: "";
+                width: 1170px;
+                height: 1px;
+                background: $white;
+                position: absolute;
+                left: 60px;
+                top: 50%;
+                -webkit-transform: translateY(-50%);
+                -ms-transform: translateY(-50%);
+                transform: translateY(-50%);
+                @include breakpoint(max-xxl){
+                    width: 994px;
+                }
+                @include breakpoint(max-xl){
+                    width: 816px;
+                }
+                @include breakpoint(max-lg){
+                    width: 574px;
+                }
+                @include breakpoint(max-md){
+                    width: 396px;
+                }
+            }
+            &:hover {
+                background: $theme-color;
+                color: $black;
+                border: 1px solid $theme-color;
+            }
+        }
+        .slider-next {
+            position: absolute;
+            right: 0;
+            bottom: 108px;
+            z-index: 9;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: transparent;
+            color: $white;
+            box-shadow: 0px 6px 50px rgba(37, 37, 37, 0.05);
+            border: 1px solid $theme-color;
+            transition: all 0.4s;
+            -webkit-transition: all 0.4s;
+            -moz-transition: all 0.4s;
+            -ms-transition: all 0.4s;
+            -o-transition: all 0.4s;
+            @include breakpoint(max-xl){
+                bottom: 50px;
+            }
+            @include breakpoint(max-lg){
+                bottom: 35px;
+            }
+            &:hover {
+                background: $theme-color;
+                color: $black;
+                border: 1px solid $theme-color;
+            }
+        }
+    }
+    &.style4 {
+        position: relative;
+        @include breakpoint(max-xl){
+           display: none;
+        }
+        .slider-prev {
+            position: absolute;
+            left: 155px;
+            bottom: -86px;
+            z-index: 9;
+            width: 60px;
+            height: 60px;
+            text-align: center;
+            border-radius: 50%;
+            background: $white;
+            color: $black;
+            box-shadow: 0px 6px 50px rgba(37, 37, 37, 0.05);
+            border: 1px solid #E1E1E1;
+            transition: all 0.4s;
+            -webkit-transition: all 0.4s;
+            -moz-transition: all 0.4s;
+            -ms-transition: all 0.4s;
+            -o-transition: all 0.4s;
+            &:hover {
+                background: $theme-color;
+                color: $black;
+                border: 1px solid $theme-color;
+            }
+        }
+        .slider-next {
+            position: absolute;
+            right: 185px;
+            bottom: -86px;
+            z-index: 9;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: $white;
+            color: $black;
+            box-shadow: 0px 6px 50px rgba(37, 37, 37, 0.05);
+            border: 1px solid #E1E1E1;
+            transition: all 0.4s;
+            -webkit-transition: all 0.4s;
+            -moz-transition: all 0.4s;
+            -ms-transition: all 0.4s;
+            -o-transition: all 0.4s;
+            &::before {
+                content: "";
+                width: 130px;
+                height: 1px;
+                background: rgba(0, 0, 0, 0.70);
+                position: absolute;
+                left: -150px;
+                top: 50%;
+                -webkit-transform: translateY(-50%);
+                -ms-transform: translateY(-50%);
+                transform: translateY(-50%);
+            }
+            &:hover {
+                background: $theme-color;
+                color: $black;
+                border: 1px solid $theme-color;
+            }
+        }
+    }
+}
+
+
+// project Pagination
+.project-wrapper {
+    &.style2 {
+        position: relative;
+        padding-bottom: 60px;
+        .pf-slider {
+            padding-bottom: 90px;
+            @include breakpoint(max-xsmall){
+                padding-bottom: 45px;
+            }
+        }
+        .slider-pagination {
+            position: absolute !important;
+            z-index: 99;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 300px;
+            height: 10px;
+            background-color: #EBEDFF;
+            border-radius: 100px;
+            -webkit-border-radius: 100px;
+            -moz-border-radius: 100px;
+            -ms-border-radius: 100px;
+            -o-border-radius: 100px;
+            transition: 0.4s ease-in-out;
+            -webkit-transition: 0.4s ease-in-out;
+            -moz-transition: 0.4s ease-in-out;
+            -ms-transition: 0.4s ease-in-out;
+            -o-transition: 0.4s ease-in-out;
+            -webkit-transform: translate(-50%, -98%);
+            -moz-transform: translate(-50%, -98%);
+            -ms-transform: translate(-50%, -98%);
+            -o-transform: translate(-50%, -98%);
+        }
+        .swiper-pagination-bullet {
+            width: 10px;
+            height: 10px;
+            flex-shrink: 0;
+            display: inline-block;
+            background-color: #EBEDFF;
+            transition: background-color 0.3s;
+            margin: 0 5px;
+            border-radius: 100px;
+            -webkit-transition: background-color 0.3s;
+            -moz-transition: background-color 0.3s;
+            -ms-transition: background-color 0.3s;
+            -o-transition: background-color 0.3s;
+            -webkit-border-radius: 100px;
+            -moz-border-radius: 100px;
+            -ms-border-radius: 100px;
+            -o-border-radius: 100px;
+        }
+        .swiper-pagination-bullet-active {
+            width: 100px;
+            height: 10px;
+            background-color: $theme-color;
+        }
+    }
+}

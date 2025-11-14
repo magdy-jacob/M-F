@@ -1,0 +1,108 @@
+/*----------------------------------------------
+    # Services style here
+----------------------------------------------*/
+.service-wrapper {
+    &.style2 {
+        .right-side {
+            text-align: end;
+            @include breakpoint(max-lg) {
+                text-align: start;
+            }
+            .icon-box {
+                display: flex;
+                justify-content: end;
+                @include breakpoint(max-lg) {
+                    justify-content: start;
+                }
+                .right-line-shape {
+                    position: absolute;
+                    top: 50%;
+                    right: 70px;
+                    -webkit-transform: translateY(-50%);
+                    -ms-transform: translateY(-50%);
+                    transform: translateY(-50%);
+                    @include breakpoint(max-lg) {
+                        left: 70px;
+                        top: 30px;
+                    }
+                }
+            }
+        }
+        .thumb {
+            text-align: center;
+            position: relative;
+            z-index: 99;
+            img {
+                border-radius: 20px;
+                max-width: 100%;
+            }
+        }
+    }
+    &.style3 {
+        .row {
+            .col-xl-3 {
+                box-shadow: 0px 0px 60px 0px rgba(0, 0, 0, 0.05);
+            }
+        }
+    }
+}
+
+/*----------------------------------------------
+    # Testimonial Section  style here
+----------------------------------------------*/
+.testimonial-wrapper {
+    &.style2 {
+        padding: 60px 80px;
+        background: $black;
+        border-radius: 40px;
+        @include breakpoint(max-xl) {
+            padding: 40px 40px;
+        }
+        @include breakpoint(max-xxs) {
+            padding: 0;
+        }
+        .testimonial-inner {
+            padding: 40px;
+            border: 1px solid $theme-color;
+            display: flex;
+            gap: 40px;
+            border-radius: 20px;
+            @include breakpoint(max-lg) {
+                flex-direction: column-reverse;
+            }
+            @include breakpoint(max-xxs) {
+                padding: 30px;
+                border-radius: 40px;
+            }
+            .thumb {
+                img {
+                    border: 2PX solid $theme-color;
+                    border-radius: 20px;
+                    @include breakpoint(max-lg) {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*----------------------------------------------
+    # Project Section  style here
+----------------------------------------------*/
+.project-wrapper{
+    &.style2 {
+        .title-section {
+            &.style4 {
+                .title-content {
+                   h2{
+                    @include breakpoint(max-sm) {
+                        font-size: 44.25px;
+                        line-height: 47px;
+                    }
+                   }
+                }
+            }
+        }
+    }
+}

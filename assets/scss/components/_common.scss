@@ -1,0 +1,578 @@
+/*----------------------------------------------
+    # All Common style here
+----------------------------------------------*/
+.fancy-box {
+	&.style1 {
+		display: flex;
+		align-items: center;
+		gap: 12px;
+		margin-bottom: 20px;
+
+		.item {
+			.icon {
+				padding: 30px 20px;
+				border-radius: 12px;
+				border: 1px solid $border-color;
+				-webkit-border-radius: 12px;
+				-moz-border-radius: 12px;
+				-ms-border-radius: 12px;
+				-o-border-radius: 12px;
+
+				i {
+					width: 40px;
+					height: 40px;
+					line-height: 40px;
+					text-align: center;
+					background-color: $theme-color;
+					color: $white;
+					border-radius: 50%;
+					-webkit-border-radius: 50%;
+					-moz-border-radius: 50%;
+					-ms-border-radius: 50%;
+					-o-border-radius: 50%;
+				}
+			}
+
+			h5 {
+				color: $title-color;
+				font-family: $title-font;
+				font-size: 24px;
+				font-style: normal;
+				font-weight: 700;
+				line-height: 130%;
+				text-align: start;
+			}
+
+			p {
+				color: $text-color;
+				font-family: $body-font;
+				font-size: 16px;
+				font-style: normal;
+				font-weight: 300;
+				line-height: 150%;
+				margin-top: 10px;
+			}
+		}
+	}
+
+	&.style2 {
+		position: relative;
+		display: flex;
+		align-items: center;
+		z-index: 3;
+
+		.item {
+			img {
+				margin-right: 15px;
+				border-radius: 50%;
+				-webkit-border-radius: 50%;
+				-moz-border-radius: 50%;
+				-ms-border-radius: 50%;
+				-o-border-radius: 50%;
+			}
+		}
+
+		.item {
+			h4 {
+				color: $title-color;
+				font-family: $title-font;
+				font-size: 20px;
+				font-style: normal;
+				font-weight: 700;
+				line-height: 130%;
+				margin-right: 30px;
+			}
+
+			span {
+				color: $text-color;
+				font-family: $body-font;
+				font-size: 16px;
+				font-style: normal;
+				font-weight: 300;
+				line-height: 150%;
+				margin-right: 5px;
+			}
+		}
+
+		.item {
+			i {
+				padding: 12px 0px 12px 30px;
+				text-align: center;
+				color: $theme-color;
+				border-left: 2px solid $border-color;
+			}
+		}
+	}
+
+	&.style3 {
+		.item {
+			img {
+				margin-bottom: 15px;
+			}
+
+			h6 {
+				color: $title-color;
+				font-family: $body-font;
+				font-size: 18px;
+				font-style: normal;
+				font-weight: 400;
+				line-height: 150%;
+				margin-bottom: 5px;
+			}
+
+			span {
+				color: $title-color;
+				font-family: $body-font;
+				font-size: 18px;
+				font-style: normal;
+				font-weight: 300;
+				line-height: 150%;
+			}
+		}
+	}
+}
+
+
+
+.star {
+	ul {
+		display: flex;
+		align-items: center;
+		justify-content: start;
+		gap: 5px;
+
+		li {
+			i {
+				color: $orange-color;
+			}
+		}
+	}
+}
+
+
+.progress-wrap {
+	margin-bottom: 15px;
+
+	.progress-meta {
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 15px;
+
+		.title {
+			color: $theme-color;
+			font-family: $title-font;
+			font-size: 20px;
+			font-style: normal;
+			font-weight: 700;
+			line-height: 130%;
+		}
+
+		.percentage {
+			color: $theme-color;
+			font-family: $title-font;
+			font-size: 20px;
+			font-style: normal;
+			font-weight: 700;
+			line-height: 130%;
+		}
+
+		@include breakpoint (max-xs) {
+			gap: 210px;
+		}
+
+		@include breakpoint (max-xxs) {
+			gap: 150px;
+		}
+	}
+
+	.progress-container {
+		position: relative;
+		width: 100%;
+		height: 5px;
+		background-color: #D9DDFF !important;
+		border-radius: 10px;
+		overflow: visible;
+
+		.progress-bar {
+			height: 5px;
+			background-color: $theme-color;
+			border-radius: 10px;
+			position: relative;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			white-space: nowrap;
+			z-index: 1;
+		}
+
+		@include breakpoint(max-sm) {
+			width: 85%;
+		}
+
+
+		&:before,
+		&:after {
+			position: absolute;
+			top: -4px;
+			content: '';
+			width: 8px;
+			height: 12px;
+			background-color: $theme-color;
+			z-index: 3;
+			border-radius: 2px;
+		}
+
+		&:before {
+			left: 0;
+		}
+
+		&:after {
+			right: 30%;
+		}
+
+		&.style2 {
+
+			&:before,
+			&:after {
+				background-color: $orange-color;
+			}
+		}
+	}
+
+}
+
+.arrow-button {
+	position: absolute;
+	z-index: 9;
+
+	.arrow-prev {
+		width: 60px;
+		height: 60px;
+		line-height: 60px;
+		text-align: center;
+		margin-right: 8px;
+		background-color: $white;
+		color: $title-color;
+		border: 1px solid $title-color;
+		border-radius: 50%;
+		transition: all 0.4s ease-in-out;
+		-webkit-border-radius: 50%;
+		-moz-border-radius: 50%;
+		-ms-border-radius: 50%;
+		-o-border-radius: 50%;
+		-webkit-transition: all 0.4s ease-in-out;
+		-moz-transition: all 0.4s ease-in-out;
+		-ms-transition: all 0.4s ease-in-out;
+		-o-transition: all 0.4s ease-in-out;
+	}
+
+	.arrow-next {
+		width: 60px;
+		height: 60px;
+		line-height: 60px;
+		text-align: center;
+		background-color: $theme-color-2;
+		color: $title-color;
+		border: 1px solid $theme-color-2;
+		border-radius: 50%;
+		transition: all 0.4s ease-in-out;
+		-webkit-border-radius: 50%;
+		-moz-border-radius: 50%;
+		-ms-border-radius: 50%;
+		-o-border-radius: 50%;
+		-webkit-transition: all 0.4s ease-in-out;
+		-moz-transition: all 0.4s ease-in-out;
+		-ms-transition: all 0.4s ease-in-out;
+		-o-transition: all 0.4s ease-in-out;
+	}
+
+	.arrow-next,
+	.arrow-prev {
+		&:hover {
+			background-color: $title-color;
+			color: $white;
+			border: 1px solid $title-color;
+		}
+	}
+}
+
+//>>>>> Mouse Cursor Start <<<<<//
+.mouse-cursor {
+	position: fixed;
+	left: 0;
+	top: 0;
+	pointer-events: none;
+	border-radius: 50%;
+	-webkit-transform: translateZ(0);
+	transform: translateZ(0);
+	visibility: hidden;
+}
+
+.cursor-inner {
+	width: 6px;
+	height: 6px;
+	z-index: 10000001;
+	background-color: $orange-color;
+	-webkit-transition: width 0.3s ease-in-out, height 0.3s ease-in-out, margin 0.3s ease-in-out, opacity 0.3s ease-in-out;
+	-o-transition: width 0.3s ease-in-out, height 0.3s ease-in-out, margin 0.3s ease-in-out, opacity 0.3s ease-in-out;
+	transition: width 0.3s ease-in-out, height 0.3s ease-in-out, margin 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.cursor-inner.cursor-hover {
+	margin-left: -35px;
+	margin-top: -35px;
+	width: 70px;
+	height: 70px;
+	background-color: $orange-color;
+	opacity: 0.3;
+}
+
+.cursor-outer {
+	margin-left: -12px;
+	margin-top: -12px;
+	width: 30px;
+	height: 30px;
+	border: 1px solid $orange-color;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	z-index: 10000000;
+	opacity: 0.5;
+	-webkit-transition: all 0.08s ease-out;
+	-o-transition: all 0.08s ease-out;
+	transition: all 0.08s ease-out;
+}
+
+.cursor-outer.cursor-hover {
+	opacity: 0;
+}
+
+
+
+.section-padding {
+	padding: 120px 0;
+
+	@include breakpoint(max-xl) {
+		padding: 80px 0;
+	}
+
+	@include breakpoint(max-lg) {
+		padding: 40px 0;
+	}
+}
+
+.section-padding1 {
+	padding: 200px 0 110px;
+
+	@include breakpoint(max-xl) {
+		padding: 180px 0 90px;
+	}
+
+	@include breakpoint(max-lg) {
+		padding: 170px 0 80px;
+	}
+}
+
+.section-padding2 {
+	padding: 110px 0 270px;
+
+	@include breakpoint(max-xl) {
+		padding: 90px 0 240px;
+	}
+
+	@include breakpoint(max-lg) {
+		padding: 60px 0 230px;
+	}
+
+	@include breakpoint(max-md) {
+		padding: 40px 0 190px;
+	}
+}
+
+.section-padding-3 {
+	padding: 80px 0;
+
+	@include breakpoint(max-xl) {
+		padding: 60px 0;
+	}
+
+	@include breakpoint(max-lg) {
+		padding: 40px 0;
+	}
+}
+
+.padding-bottom120 {
+	padding-bottom: 120px;
+
+	@include breakpoint(max-xl) {
+		padding-bottom: 70px;
+	}
+
+	@include breakpoint(max-lg) {
+		padding-bottom: 50px;
+	}
+}
+.margin-top120 {
+	margin-top: 120px;
+
+	@include breakpoint(max-xl) {
+		margin-top: 70px;
+	}
+
+	@include breakpoint(max-lg) {
+		margin-top: 50px;
+	}
+}
+.padding-bottom240 {
+	padding-bottom: 240px;
+
+	@include breakpoint(max-xl) {
+		padding-bottom: 150px;
+	}
+
+	@include breakpoint(max-lg) {
+		padding-bottom: 100px;
+	}
+}
+
+.section-py-120 {
+	padding: 120px 0;
+	@include breakpoint(max-xl) {
+		padding: 70px 0;
+	}
+
+	@include breakpoint(max-lg) {
+		padding: 50px 0;
+	}
+}
+
+.section-bg {
+	background-color: #EFEFEF;
+}
+
+.section-bg-black {
+	background-color: #000000;
+}
+.section-bg-white {
+	background-color: #FFF;
+}
+
+
+
+.background-image,
+[data-bg-src] {
+	@include background-content(no-repeat, cover, center center);
+}
+
+.mask-content {
+	mask-repeat: no-repeat;
+	-webkit-mask-repeat: no-repeat;
+	mask-size: cover;
+	-webkit-mask-size: cover;
+	mask-position: center center;
+	-webkit-mask-position: center center;
+	width: 100%;
+}
+
+
+.checklists {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+
+	li {
+		display: flex;
+		align-items: center;
+		color: $title-color;
+		font-family: $title-font;
+		font-size: 20px;
+		font-style: normal;
+		font-weight: 500;
+		line-height: 24px;
+
+		svg {
+			margin-right: 20px;
+		}
+	}
+}
+
+.checklists {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+
+	li {
+		display: flex;
+		align-items: center;
+		color: $pra-text-color;
+		font-family: $body-font;
+		font-size: 18px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 28px;
+
+		.icon {
+			width: 16px;
+			height: 16px;
+			line-height: 14px;
+			margin-right: 15px;
+			text-align: center;
+			background-color: $theme-color;
+			border-radius: 50%;
+			-webkit-border-radius: 50%;
+			-moz-border-radius: 50%;
+			-ms-border-radius: 50%;
+			-o-border-radius: 50%;
+
+			i {
+				font-size: 10px;
+				color: $theme-color-2;
+			}
+		}
+	}
+}
+
+
+
+.about-counter-box {
+	&.style1 {
+		display: flex;
+		align-items: center;
+		padding: 24px;
+		gap: 25px;
+		margin-top: 15px;
+		border-radius: 21.484px;
+		background: linear-gradient(180deg, #F5F5F5 0%, #FFE175 100%);
+		max-width: 265px;
+
+		.icon {}
+
+		.content {
+			.counter {
+				color: $title-color;
+				font-family: $title-font;
+				font-size: 37.25px;
+				font-style: normal;
+				font-weight: 700;
+				line-height: 57.307px;
+			}
+
+			.text {
+				color: $text-color;
+				font-family: $body-font;
+				font-size: 18px;
+				font-style: normal;
+				font-weight: 400;
+				line-height: 28px;
+			}
+		}
+	}
+}
+
+
+// animation
+.text-load{
+	opacity: 0;
+    -webkit-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+}

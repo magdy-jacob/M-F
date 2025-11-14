@@ -1,0 +1,96 @@
+.contact-wrapper {
+    &.style1 {
+        .contact-inner {
+            border-radius: 40px;
+            background: #FAF8F3;
+            padding: 80px 60px;
+            display: flex;
+            gap: 30px;
+
+            @include breakpoint(max-xl) {
+                flex-direction: column;
+            }
+            @include breakpoint(max-sm) {
+                padding: 30px 20px;
+            }
+
+            .contact-left-part {
+                .title-section {
+                    &.style2 {
+                        margin-bottom: 30px;
+
+                        .title-content {
+                            max-width: 510px;
+
+                            h2 {
+                                color: $black;
+                                font-size: 75.25px;
+                                font-weight: 700;
+                                line-height: 76px;
+                                letter-spacing: -2.592px;
+                                text-transform: uppercase;
+                                margin-bottom: 16px;
+                                @include breakpoint(max-xsmall) {
+                                    font-size: 42.25px;
+                                    line-height: 42px;
+                                  }
+                            }
+
+                            P {
+                                color: $black;
+                            }
+                        }
+                    }
+                }
+
+                .map {
+                    iframe{
+                        max-width: 100%;
+                    }
+                }
+            }
+        }
+
+        .contact-info {
+            margin-top: 80px;
+
+            .single-item {
+                display: flex;
+                align-items: center;
+                gap: 20px;
+                padding: 30px 0 30px 30px;
+                border-radius: 20px;
+                border: 1px solid #E1E1E1;
+
+                @include breakpoint(max-xxl) {
+                    gap: 15px;
+                    padding: 28px 10px 30px 18px;
+
+                }
+
+                .icon {
+                    i {
+                        color: $theme-color;
+                        width: 40px;
+                        height: 40px;
+                        line-height: 40px;
+                        text-align: center;
+                        border-radius: 50%;
+                        background: $black;
+                    }
+                }
+
+                .content {
+                    h4 {
+                        color: $black;
+                        margin-bottom: 10px;
+                    }
+
+                    p {
+                        color: rgba(0, 0, 0, 0.70);
+                    }
+                }
+            }
+        }
+    }
+}

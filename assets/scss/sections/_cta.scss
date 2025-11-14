@@ -1,0 +1,97 @@
+.cta-wrapper {
+    &.style1 {
+        .cta-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: $black;
+            padding: 66px 80px;
+            border-radius: 30px;
+            @include breakpoint(max-xxl) {
+                padding: 66px 40px;
+            }
+            @include breakpoint(max-xl) {
+                padding: 40px 10px;
+            }
+            @include breakpoint(max-lg) {
+                flex-direction: column;
+                -webkit-row-gap: 30px;
+                -moz-row-gap: 30px;
+                row-gap: 30px;
+            }
+            .contact-content {
+                display: flex;
+                align-items: center;
+                gap: 20px;
+                .icon {
+                    width: 80px;
+                    height: 80px;
+                    line-height: 90px;
+                    text-align: center;
+                    background: $theme-color;
+                    border-radius: 50%;
+                    @include breakpoint(max-xs) {
+                        width: 50px;
+                        height: 50px;
+                        line-height: 50px;
+                    }
+                    i {
+                        color: $black;
+                        font-size: 36px;
+                        font-style: normal;
+                        font-weight: 900;
+                        line-height: normal;
+                        @include breakpoint(max-xs) {
+                            font-size: 22px;
+                        }
+                    }
+                }
+                .contact-meta {
+                    p {
+                        color: $white;
+                    }
+                    h4 {
+                        a {
+                            color: $white;
+                        }
+                    }
+                }
+            }
+            .cta-title {
+                border-left: 1px solid $theme-color;
+                border-right: 1px solid $theme-color;
+                padding: 0 16px 0 54px;
+                max-width: 547px;
+                @include breakpoint(max-xl) {
+                    padding: 0 16px 0 16px;
+                    max-width: 447px;
+                }
+                @include breakpoint(max-lg) {
+                    border: none;
+                    max-width: 100%;
+                }
+                h3 {
+                    color: $white;
+                    font-family: $title-font;
+                    font-size: 36px;
+                    font-weight: 700;
+                    line-height: 46px;
+                    text-transform: capitalize;
+                    max-width: 447px;
+                    @include breakpoint(max-xl) {
+                        padding: 0 16px 0 16px;
+                        max-width: 345px;
+                    }
+                    @include breakpoint(max-lg) {
+                        max-width: 100%;
+                        text-align: center;
+                    }
+                    @include breakpoint(max-xsmall) {
+                        font-size: 23px;
+                        line-height: 30px;
+                    }
+                }
+            }
+        }
+    }
+}

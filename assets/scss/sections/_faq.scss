@@ -1,0 +1,265 @@
+/*----------------------------------------------
+    # Faq style here
+----------------------------------------------*/
+.accordion {
+  &.style1 {
+    .accordion-item {
+      border: none;
+      margin-bottom: 25px;
+      background: transparent;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      .accordion-button {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .title {
+          span {
+            color: var(--Gray-900, #000);
+            font-family: "Space Grotesk";
+            font-size: 31.75px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 32px;
+            letter-spacing: -0.864px;
+            text-transform: uppercase;
+
+            @include breakpoint(max-md) {
+              font-size: 20.75px;
+            }
+
+            @include breakpoint(max-sm) {
+              font-size: 18.75px;
+            }
+
+            @include breakpoint(max-xs) {
+              font-size: 16.75px;
+            }
+
+            @include breakpoint(max-xxsmall) {
+              font-size: 13.75px;
+            }
+
+            &:first-child {
+              margin-right: 30px;
+            }
+          }
+        }
+
+        a {
+          color: var(--Gray-900, #000);
+          font-family: "Space Grotesk";
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 18px;
+          letter-spacing: normal;
+
+          @include breakpoint(max-xxsmall) {
+            font-size: 10px;
+          }
+        }
+      }
+
+      .accordion-button:focus {
+        z-index: 3;
+        outline: 0;
+        box-shadow: none;
+      }
+
+      button {
+        gap: 20px;
+        padding: 0 0 10px 0;
+        border-bottom: 1px solid #D0D0D0;
+        background: transparent;
+
+
+        &:after {
+          display: none;
+        }
+
+        &:not(.collapsed) {
+          color: inherit !important;
+          background-color: transparent !important;
+          box-shadow: none !important;
+          border: none;
+
+          .icon-box {
+            background-color: $theme-color;
+          }
+        }
+
+
+        .accordion-button {
+          &.collapsed {
+            background: $white;
+
+            &:after {
+              display: none;
+            }
+          }
+        }
+      }
+
+      .accordion-collapse {
+        .accordion-body {
+          padding: 0;
+
+          img {
+            max-width: 100%;
+            border-radius: 20px;
+          }
+        }
+      }
+    }
+  }
+
+  &.style3 {
+
+    .accordion-item .accordion-header button:after {
+      display: none;
+    }
+
+    .accordion-item .accordion-button[aria-expanded="false"]::before {
+      content: "+";
+      -webkit-transform: rotate(180deg);
+      transform: rotate(180deg);
+      right: 10px;
+      position: absolute;
+      font-size: 30px;
+      width: 40px;
+      height: 40px;
+      line-height: 40px;
+      text-align: center;
+      border-radius: 50%;
+      color: $title-color;
+    }
+
+    .accordion-item .accordion-button[aria-expanded="true"]::before {
+      content: "-";
+      -webkit-transform: rotate(180deg);
+      transform: rotate(180deg);
+      right: 10px;
+      position: absolute;
+      font-size: 30px;
+      width: 40px;
+      height: 40px;
+      line-height: 40px;
+      text-align: center;
+      border-radius: 50%;
+      color: $title-color;
+    }
+
+    .accordion-item {
+      margin-bottom: 25px;
+      background: transparent;
+      border: 1px solid transparent;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      .accordion-button:focus {
+        z-index: 3;
+        outline: 0;
+        box-shadow: none;
+      }
+
+      button {
+        gap: 20px;
+        padding: 0 0 20px 0 !important;
+        border-bottom: 1px solid #D0D0D0;
+        background: transparent;
+        color: rgba(0, 0, 0, 0.70);
+        font-family: $body-font;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 21.6px;
+
+        @include breakpoint(max-md) {
+          font-size: 17px;
+        }
+
+        @include breakpoint(max-xs) {
+          font-size: 13px;
+        }
+
+        @include breakpoint(max-xxs) {
+          font-size: 12px;
+        }
+
+        @include breakpoint(max-xxsmall) {
+          font-size: 10px;
+        }
+
+        span {
+
+          @include breakpoint(max-xxsmall) {
+            margin-right: 10px;
+          }
+        }
+
+        &:not(.collapsed) {
+          color: inherit !important;
+          background-color: transparent !important;
+          box-shadow: none !important;
+          border: none;
+
+          .icon-box {
+            background-color: $theme-color;
+          }
+        }
+
+
+        .accordion-button {
+
+          &.collapsed {
+            background: $white;
+
+            &:after {
+              display: none;
+            }
+          }
+        }
+      }
+
+      .accordion-collapse {
+        .accordion-body {
+          padding: 20px 0px 0 30px !important;
+
+          p {
+            color: rgba(0, 0, 0, 0.70);
+            font-family: $body-font;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 21.6px;
+            margin-left: 47px;
+
+            @include breakpoint(max-md) {
+              font-size: 17px;
+            }
+    
+            @include breakpoint(max-xs) {
+              font-size: 13px;
+            }
+    
+            @include breakpoint(max-xxs) {
+              font-size: 12px;
+            }
+    
+            @include breakpoint(max-xxsmall) {
+              font-size: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+}

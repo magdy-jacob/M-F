@@ -1,0 +1,97 @@
+.message-wrapper {
+    &.style1 {
+        .message-inner {
+            border-radius: 40px;
+            background: $black;
+            padding: 80px 60px;
+            display: flex;
+            gap: 30px;
+
+            @include breakpoint(max-xl) {
+                flex-direction: column;
+            }
+
+            @include breakpoint(max-xs) {
+                padding: 40px 30px;
+            }
+
+            @include breakpoint(max-xsmall) {
+                padding: 20px 0;
+                background: transparent;
+            }
+
+            .message-left-part {
+                .title-section {
+                    &.style2 {
+                        margin-bottom: 30px;
+
+                        @include breakpoint(max-xxs) {
+                            margin-bottom: 0;
+                        }
+
+                        .title-content {
+                            max-width: 510px;
+
+                            h2 {
+                                color: $white;
+                                font-size: 75.25px;
+                                font-weight: 700;
+                                line-height: 76px;
+                                letter-spacing: -2.592px;
+                                text-transform: uppercase;
+                                margin-bottom: 16px;
+                                @include breakpoint(max-lg) {
+                                    font-size: 65.25px;
+                                }
+                
+                                @include breakpoint(max-md) {
+                                    font-size: 48.25px;
+                                    line-height: 75px;
+                                }
+                
+                                @include breakpoint(max-xl) {
+                                    font-size: 39.25px;
+                                    line-height: 47px;
+                                }
+                
+                                @include breakpoint(max-xxs) {
+                                    font-size: 34.25px;
+                                    line-height: 40px;
+                                }
+                
+                                @include breakpoint(max-xsmall) {
+                                    font-size: 30.25px;
+                                    line-height: 35px;
+                                }
+                            }
+
+                            P {
+                                color: $white;
+
+                                @include breakpoint(max-xsmall) {
+                                    display: none;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .map {
+                    @include breakpoint(max-xxs) {
+                        display: none;
+                    }
+
+                    iframe {
+                        @include breakpoint(max-xl) {
+                            width: 100%;
+                        }
+
+                        @include breakpoint(max-md) {
+                            max-width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,193 @@
+/*-----------------------------------------------------------------
+Theme Name: Pyrion
+Author: 
+Author URI: 
+Version: 1.0.0 
+Description: Pyrion - Factory & Industry Html Templatee  <
+ 
+-------------------------------------------------------------------
+ CSS TABLE OF CONTENTS
+-------------------------------------------------------------------
+
+01.Mixins
+02.Variables
+03.Typography
+04.Buttons 
+05.Gutter 
+06.Container 
+07.Animation 
+08.Helping 
+09.MeanMenu 
+10.Preloader
+11.Title 
+12.Common 
+13.Header 
+14.Footer 
+15.Contact 
+16.Service 
+17.Intro
+18.About
+19.Testimonial 
+20.Blog 
+21.Blog Extra
+22.Sidebar
+23.Card
+24.Feature
+25.Form
+26.Index
+27.Index-2
+28.Video
+29.Faq
+30.simple section
+31.Counter section
+32.slider
+33.Text Slider
+34.widge
+35.blog page 
+36.Project page
+37.services page
+38.Bento
+39.Cta
+40.Message
+41.Service Details
+42.Project Details
+43 Team Single
+
+------------------------------------------------------------------*/
+
+
+//>> Basic Start <<//
+
+/* 01.Mixins */
+@import "base/mixins";
+
+/* 02.Variables */
+@import "base/variables";
+
+/* 03.Typography */
+@import "base/typography";
+
+/* 04.Buttons */
+@import "base/buttons";
+
+/* 05.Gutter */
+@import "base/gutter";
+
+/* 06.Container */
+@import "base/container";
+
+/* 07.Animation */
+@import "base/animation"; 
+
+/* 08.Helping */
+@import "base/helping"; 
+
+/* 09.MeanMenu */
+@import "base/meanmenu";
+
+/* 10.Preloader */
+@import "base/preloader";
+//>> Basic End <<//	
+
+
+//>> Template  Style Start <<//  
+
+/* 11.Title */
+@import "components/title";
+
+/* 12.Common */
+@import "components/common";
+
+/* 13.Header */
+@import "layouts/header";
+
+/* 14.Footer */
+@import "layouts/footer";
+
+/* 15.Contact  */
+@import "sections/contact";
+
+/* 17.Intro */
+@import "sections/intro";
+
+/* 18.About*/
+@import "sections/about";
+
+/* 19.Testimonial  */
+@import "sections/testimonial";
+
+// /* 20.Blog */
+// @import "sections/blog";
+
+/* 21.Blog Extra */
+// @import "_blog-extra";
+
+/* 22.Sidebar */
+@import "components/sidebar"; 
+
+/* 23.Card */
+@import "components/card"; 
+
+// /* 24.Feature */
+// @import "sections/feature";
+
+/* 25.Form */
+@import "components/form";
+
+/* 26.Index */
+@import "pages/index1"; 
+
+/* 27.Index2 */
+@import "pages/index2"; 
+
+
+/* 28.Video */
+@import "sections/video"; 
+
+/* 29.Faq */
+@import "sections/faq"; 
+
+/* 30.simple section */
+@import "components/simple-section"; 
+
+/* 31.Counter section */
+@import "sections/counter"; 
+
+/*32.slider */
+@import "components/slider"; 
+
+/*33.Text Slider */
+@import "sections/text-slider";
+
+/*34.widget */
+@import "components/widget";
+
+/*35.blog page */
+@import "pages/blog-page";
+
+/*36.Project page */
+// @import "_projects-page";
+
+/*37.services page */
+// @import "_services-page";
+
+/*38.Bento*/
+@import "sections/bento";
+
+/*39.Cta*/
+@import "sections/cta";
+
+/*40 Message*/
+@import "sections/message";
+
+/*41 Service Details*/
+@import "pages/service-details";
+
+/*42 Project Details*/
+@import "pages/project-details";
+
+/*43 Team Single*/
+@import "pages/team-single";
+
+//>> Template Style End <<//
+

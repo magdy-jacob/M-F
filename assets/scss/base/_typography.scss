@@ -1,0 +1,207 @@
+/* --------------------------------------------
+    Template Default Fonts & Fonts Styles
+ ---------------------------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Space+Grotesk:wght@300..700&display=swap');
+
+
+$title-font: "Space Grotesk", sans-serif;
+$body-font: "Lexend", sans-serif;
+$fa: "Font Awesome 6 Pro";
+
+body {
+    font-family: $body-font;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 28px;
+    color: $text-color;
+    background-color: $theme-color-2;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+button {
+    border: none;
+    background-color: transparent;
+    padding: 0;
+}
+
+input:focus {
+    color: $text-color;
+    outline: none;
+}
+
+input {
+    &::placeholder {
+        color: #767771;
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $title-font;
+    margin: 0px;
+    padding: 0;
+    color: $header-color;
+    @include transition;
+}
+
+h1 {
+    font-size: 100px;
+    font-weight: 700;
+    line-height: 100px;
+
+    @include breakpoint(max-xxl) {
+        font-size: 75px;
+    }
+}
+
+h2 {
+    font-family: $title-font;
+    font-size: 95.25px; 
+    font-weight: 700;
+    line-height: 96px;
+    letter-spacing: -2.592px;
+    text-transform: uppercase;
+
+    @include breakpoint(max-md) {
+        font-size: 45px;
+    }
+
+    @include breakpoint(max-sm) {
+        font-size: 28px;
+    }
+}
+
+h3 {
+    font-family: $title-font;
+    font-size: 31.75px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: -0.864px;
+    text-transform: uppercase;
+
+    @include breakpoint(max-md) {
+        font-size: 16px;
+    }
+}
+
+h4 {
+    font-family: $title-font;
+    font-size: 23.625px;
+    font-weight: 700;
+    line-height: 28.8px;
+    letter-spacing: -0.648px;
+
+    @include breakpoint(max-xxl) {
+        font-size: 20px;
+    }
+}
+
+h5 {
+    font-family: $title-font;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 18px;
+}
+
+h6 {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21.6px;
+}
+
+h2 a {
+    font-family: $title-font;
+    font-size: 95.25px;
+    font-weight: 700;
+    line-height: 96px;
+    letter-spacing: -2.592px;
+    text-transform: uppercase;
+
+    @include breakpoint(max-md) {
+        font-size: 34px;
+    }
+
+    @include breakpoint(max-sm) {
+        font-size: 28px;
+    }
+}
+
+h3 a {
+    font-family: $title-font;
+    font-size: 31.75px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: -0.864px;
+    text-transform: uppercase;
+
+    @include breakpoint(max-md) {
+        font-size: 16px;
+    }
+}
+
+h4 a {
+    font-family: $title-font;
+    font-size: 23.625px;
+    font-weight: 700;
+    line-height: 28.8px;
+    letter-spacing: -0.648px;
+}
+
+h5 a {
+    font-family: $title-font;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 18px;
+}
+
+h6 a {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21.6px;
+}
+
+a {
+    text-decoration: none;
+    outline: none !important;
+    cursor: pointer;
+    color: $header-color;
+    @include transition;
+
+    &:hover {
+        color: $orange-color !important;
+    }
+}
+
+p {
+    margin: 0px;
+    @include transition;
+    font-family: $body-font;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21.6px;
+}
+
+span {
+    margin: 0px;
+    @include transition;
+}
+
+span a {
+    font-family: $body-font;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+}

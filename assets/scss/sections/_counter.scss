@@ -1,0 +1,294 @@
+.counter-wrapper {
+    &.style1 {
+        .counter-inner-wrapper {
+            padding: 60px;
+            background: $theme-color;
+            border-radius: 30px;
+            @include breakpoint(max-xl) {
+                padding: 40px;
+            }
+            .row {
+                .col-xl-3 {
+                    &:nth-child(1) {
+                        .contain-box {
+                            @include breakpoint(max-lg) {
+                                border: none;
+                                text-align: center;
+                            }
+                        }
+                    }
+                    &:nth-child(2) {
+                        .contain-box {
+                            border-left: 1px solid $black;
+                            text-align: center;
+                            @include breakpoint(max-lg) {
+                                border: none;
+                                text-align: center;
+                            }
+                            .title {
+                                right: 65px;
+                                @include breakpoint(max-xl) {
+                                    right: 35px;
+                                }
+                                @include breakpoint(max-lg) {
+                                    right: 99px;
+                                }
+                                @include breakpoint(max-md) {
+                                    right: 153px;
+                                }
+                                @include breakpoint(max-xxs) {
+                                    right: 90px;
+                                }
+                            }
+                        }
+                    }
+                    &:nth-child(3) {
+                        .contain-box {
+                            border-left: 1px solid $black;
+                            text-align: center;
+                            @include breakpoint(max-lg) {
+                                border: none;
+                                text-align: center;
+                            }
+                            @include breakpoint(max-md) {}
+                            .title {
+                                right: 72px;
+                                @include breakpoint(max-xl) {
+                                    right: 40px;
+                                }
+                                @include breakpoint(max-lg) {
+                                    right: 105px;
+                                }
+                                @include breakpoint(max-md) {
+                                    right: 173px;
+                                }
+                                @include breakpoint(max-xxs) {
+                                    right: 95px;
+                                }
+                            }
+                        }
+                    }
+                    &:nth-child(4) {
+                        .contain-box {
+                            border-left: 1px solid $black;
+                            text-align: end;
+                            @include breakpoint(max-lg) {
+                                border: none;
+                                text-align: center;
+                            }
+                            .title {
+                                right: 30px;
+                                @include breakpoint(max-lg) {
+                                    right: 102px;
+                                }
+                                @include breakpoint(max-md) {
+                                    right: 161px;
+                                }
+                                @include breakpoint(max-xxs) {
+                                    right: 100px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .contain-box {
+                position: relative;
+                .main-counter {
+                    span {
+                        -webkit-text-stroke-width: 3px;
+                        -webkit-text-stroke-color: rgba(0, 0, 0, 0.70);
+                        color: transparent;
+                        font-family: $title-font;
+                        font-size: 95.25px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: 96px;
+                        letter-spacing: -2.592px;
+                        text-transform: uppercase;
+                        opacity: 0.15;
+                        @include breakpoint(max-xl) {
+                            font-size: 80.25px;
+                        }
+                        @include breakpoint(max-md) {
+                            font-size: 95px;
+                        }
+                    }
+                }
+                .title {
+                    text-align: center;
+                    position: absolute;
+                    right: 97px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    @include breakpoint(max-xl) {
+                        right: 20px;
+                    }
+                    @include breakpoint(max-lg) {
+                        right: 80px;
+                    }
+                    @include breakpoint(max-md) {
+                        right: 166px;
+                    }
+                    @include breakpoint(max-xxs) {
+                        right: 100px;
+                    }
+                    h6 {
+                        color: rgba(0, 0, 0, 0.70);
+                        font-family: $body-font;
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 21.6px;
+                    }
+                }
+            }
+        }
+    }
+    &.style2 {
+        .counter-inner-wrapper {
+            padding: 60px;
+            background: $black;
+            border-radius: 30px;
+            @include breakpoint(max-xl) {
+                padding: 40px;
+            }
+            .row {
+                .col-xl-3 {
+                    &:nth-child(1) {
+                        .contain-box {
+                            @include breakpoint(max-lg) {
+                                border: none;
+                                text-align: center;
+                            }
+                        }
+                    }
+                    &:nth-child(2) {
+                        .contain-box {
+                            border-left: 1px solid $theme-color;
+                            text-align: center;
+                            @include breakpoint(max-lg) {
+                                border: none;
+                                text-align: center;
+                            }
+                            .title {
+                                right: 65px;
+                                @include breakpoint(max-xl) {
+                                    right: 35px;
+                                }
+                                @include breakpoint(max-lg) {
+                                    right: 99px;
+                                }
+                                @include breakpoint(max-md) {
+                                    right: 153px;
+                                }
+                                @include breakpoint(max-xxs) {
+                                    right: 90px;
+                                }
+                            }
+                        }
+                    }
+                    &:nth-child(3) {
+                        .contain-box {
+                            border-left: 1px solid $theme-color;
+                            text-align: center;
+                            @include breakpoint(max-lg) {
+                                border: none;
+                                text-align: center;
+                            }
+                            @include breakpoint(max-md) {}
+                            .title {
+                                right: 72px;
+                                @include breakpoint(max-xl) {
+                                    right: 40px;
+                                }
+                                @include breakpoint(max-lg) {
+                                    right: 105px;
+                                }
+                                @include breakpoint(max-md) {
+                                    right: 173px;
+                                }
+                                @include breakpoint(max-xxs) {
+                                    right: 95px;
+                                }
+                            }
+                        }
+                    }
+                    &:nth-child(4) {
+                        .contain-box {
+                            border-left: 1px solid $theme-color;
+                            text-align: end;
+                            @include breakpoint(max-lg) {
+                                border: none;
+                                text-align: center;
+                            }
+                            .title {
+                                right: 30px;
+                                @include breakpoint(max-lg) {
+                                    right: 102px;
+                                }
+                                @include breakpoint(max-md) {
+                                    right: 161px;
+                                }
+                                @include breakpoint(max-xxs) {
+                                    right: 100px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .contain-box {
+                position: relative;
+                .main-counter {
+                    span {
+                        -webkit-text-stroke-width: 3px;
+                        -webkit-text-stroke-color: $white;
+                        color: transparent;
+                        font-family: $title-font;
+                        font-size: 95.25px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: 96px;
+                        letter-spacing: -2.592px;
+                        text-transform: uppercase;
+                        opacity: 0.15;
+                        @include breakpoint(max-xl) {
+                            font-size: 80.25px;
+                        }
+                        @include breakpoint(max-md) {
+                            font-size: 95px;
+                        }
+                    }
+                }
+                .title {
+                    text-align: center;
+                    position: absolute;
+                    right: 97px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    @include breakpoint(max-xl) {
+                        right: 20px;
+                    }
+                    @include breakpoint(max-lg) {
+                        right: 80px;
+                    }
+                    @include breakpoint(max-md) {
+                        right: 166px;
+                    }
+                    @include breakpoint(max-xxs) {
+                        right: 100px;
+                    }
+                    h6 {
+                        color: $white;
+                        font-family: $body-font;
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 21.6px;
+                    }
+                }
+            }
+        }
+    }
+}

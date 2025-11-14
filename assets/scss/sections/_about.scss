@@ -1,0 +1,187 @@
+/*----------------------------------------------
+    # About style here
+----------------------------------------------*/
+
+.about-wrapper {
+    &.style1 {
+        .about-video-content {
+            position: relative;
+        }
+
+        .title-section {
+            .title-content {
+                h2 {
+                    @include breakpoint(max-lg) {
+                        font-size: 65.25px;
+                    }
+
+                    @include breakpoint(max-md) {
+                        font-size: 48.25px;
+                        line-height: 75px;
+                    }
+
+                    @include breakpoint(max-xl) {
+                        font-size: 39.25px;
+                        line-height: 47px;
+                    }
+
+                    @include breakpoint(max-xxs) {
+                        font-size: 34.25px;
+                        line-height: 40px;
+                    }
+
+                    @include breakpoint(max-xsmall) {
+                        font-size: 30.25px;
+                        line-height: 35px;
+                    }
+                }
+            }
+        }
+
+        .about-widget {
+            display: flex;
+            flex-wrap: wrap;
+            column-gap: 60px;
+            row-gap: 30px;
+            margin-bottom: 40px;
+
+            @include breakpoint(max-xxl) {
+                display: grid;
+                grid-template-columns: repeat(2, 2fr);
+            }
+
+            @include breakpoint(max-lg) {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            @include breakpoint(max-md) {
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+            }
+
+            @include breakpoint(max-xs) {
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+            }
+
+            @include breakpoint(max-xsmall) {
+                row-gap: 15px;
+                margin-bottom: 20px;
+            }
+
+            .single-widget {
+                display: flex;
+                align-items: center;
+                gap: 20px;
+
+                .icon-box {
+                    width: 80px;
+                    height: 80px;
+                    line-height: 80px;
+                    background: $theme-color;
+                    text-align: center;
+                    border-radius: 50%;
+
+                    @include breakpoint(max-xsmall) {
+                        width: 50px;
+                        height: 50px;
+                        line-height: 50px;
+                    }
+
+                    img {
+                        max-width: 100%;
+                        max-height: 100%;
+
+                        @include breakpoint(max-xsmall) {
+                            width: 50%;
+                            height: 50%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &.style2 {
+        .title-section {
+            .title-content {
+                h2 {
+                    @include breakpoint(max-xxl) {
+                        font-size: 40px;
+                    }
+
+                    @include breakpoint(max-xs) {
+                        font-size: 34px;
+                    }
+
+                    @include breakpoint(max-xsmall) {
+                        font-size: 30px;
+                    }
+                }
+            }
+        }
+
+        .thumb {
+            display: flex;
+            align-items: start;
+            gap: 30px;
+
+            img {
+                border-radius: 20px;
+                max-width: 100%;
+
+                @include breakpoint(max-xxl) {
+                    max-width: 45%;
+                }
+            }
+        }
+
+        .right-content {
+            margin-left: 30px;
+
+            @include breakpoint(max-lg) {
+                margin-left: 0;
+            }
+
+            @include breakpoint(max-md) {
+                margin-left: 0;
+            }
+
+            .title {
+                margin-bottom: 30px;
+
+                h4 {
+                    color: $black;
+                }
+            }
+
+            ul {
+                li {
+                    color: rgba(0, 0, 0, 0.70);
+                    font-family: $body-font;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 21.6px;
+                    margin-bottom: 30px;
+
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+
+                    &::before {
+                        content: "\f101";
+                        position: relative;
+                        color: $black;
+                        font-family: "Font Awesome 6 Pro";
+                        font-size: 16px;
+                        font-weight: 900;
+                        line-height: normal;
+                        margin-right: 15px;
+                    }
+                }
+            }
+        }
+    }
+}

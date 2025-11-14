@@ -1,0 +1,68 @@
+.scrolling-wrap {
+    overflow: hidden;
+    white-space: nowrap;
+    display: flex;
+    gap: 20px;
+    background-color: $black;
+    padding: 40px 0;
+    position: relative;
+    z-index: -1;
+    @include breakpoint(max-xxs) {
+        padding: 20px 0;
+    }
+    .comm {
+        display: flex;
+        align-items: center;
+        animation: scroll 60s linear infinite;
+        gap: 40px;
+        cursor: pointer;
+
+        .cmn-textslide-1 {
+            color: $white;
+            font-family: $title-font;
+            font-size: 95.25px;
+            font-weight: 700;
+            line-height: 96px;
+            letter-spacing: -2.592px;
+            text-transform: uppercase;
+            
+            @include breakpoint(max-xl){
+                font-size: 60.25px;
+            }
+            @include breakpoint(max-lg){
+                font-size: 45.25px;
+            }
+            @include breakpoint(max-sm){
+                font-size: 35.25px;
+            }
+        }
+
+        .cmn-textslide-2 {
+            color: $white;
+            font-family: $title-font;
+            font-size: 95.25px;
+            font-weight: 700;
+            line-height: 96px;
+            letter-spacing: -2.592px;
+            text-transform: uppercase;
+            @include breakpoint(max-xl){
+                font-size: 60.25px;
+            }
+            @include breakpoint(max-lg){
+                font-size: 45.25px;
+            }
+            @include breakpoint(max-sm){
+                font-size: 35.25px;
+            }
+            img{
+                max-width: 100%;
+            }
+        }
+    }
+
+    &:hover {
+        .comm {
+            animation-play-state: paused;
+        }
+    }
+}

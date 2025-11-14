@@ -1,0 +1,194 @@
+/*----------------------------------------------
+    # Title style here
+----------------------------------------------*/
+
+.title-section {
+    &.style1 {
+        margin-bottom: 60px;
+
+        @include breakpoint(max-md) {
+            margin-bottom: 35px;
+        }
+
+        .title-content {
+            text-align: center;
+
+            h2 {
+                color: $black;
+
+                @include breakpoint(max-lg) {
+                    font-size: 65.25px;
+                }
+
+                @include breakpoint(max-md) {
+                    font-size: 48.25px;
+                    line-height: 75px;
+                }
+
+                @include breakpoint(max-xl) {
+                    font-size: 39.25px;
+                    line-height: 47px;
+                }
+
+                @include breakpoint(max-xxs) {
+                    font-size: 34.25px;
+                    line-height: 40px;
+                }
+
+                @include breakpoint(max-xsmall) {
+                    font-size: 30.25px;
+                    line-height: 35px;
+                }
+            }
+        }
+    }
+
+    &.style2 {
+        margin-bottom: 30px;
+
+        .title-content {
+            text-align: start;
+
+            h2 {
+                color: $black;
+                margin-bottom: 10px;
+
+                @include breakpoint(max-lg) {
+                    font-size: 65.25px;
+                }
+
+                @include breakpoint(max-md) {
+                    font-size: 48.25px;
+                    line-height: 75px;
+                }
+
+                @include breakpoint(max-xl) {
+                    font-size: 39.25px;
+                    line-height: 47px;
+                }
+
+                @include breakpoint(max-xxs) {
+                    font-size: 34.25px;
+                    line-height: 40px;
+                }
+
+                @include breakpoint(max-xsmall) {
+                    font-size: 30.25px;
+                    line-height: 35px;
+                }
+            }
+
+            p {
+                color: rgba(0, 0, 0, 0.70);
+            }
+        }
+    }
+
+    &.style3 {
+        margin-bottom: 60px;
+
+        @include breakpoint(max-md) {
+            margin-bottom: 35px;
+        }
+
+        .title-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 80px;
+
+            @include breakpoint(max-xl) {
+                flex-direction: column;
+                row-gap: 20px;
+            }
+
+            h2 {
+                color: $black;
+                font-size: 56px;
+                line-height: 66px;
+
+                @include breakpoint(max-lg) {
+                    font-size: 65.25px;
+                }
+
+                @include breakpoint(max-md) {
+                    font-size: 48.25px;
+                    line-height: 75px;
+                }
+
+                @include breakpoint(max-xl) {
+                    font-size: 39.25px;
+                    line-height: 47px;
+                }
+
+                @include breakpoint(max-xxs) {
+                    font-size: 34.25px;
+                    line-height: 40px;
+                }
+
+                @include breakpoint(max-xsmall) {
+                    font-size: 30.25px;
+                    line-height: 35px;
+                }
+            }
+
+            p {
+                color: rgba(0, 0, 0, 0.70);
+            }
+        }
+    }
+
+    &.style4 {
+        margin-bottom: 60px;
+
+        @include breakpoint(max-md) {
+            margin-bottom: 35px;
+        }
+
+        .title-content {
+            display: flex;
+            justify-content: space-between;
+
+            @include breakpoint(max-lg) {
+                flex-direction: column;
+            }
+
+            h2 {
+                color: $black;
+
+                @include breakpoint(max-lg) {
+                    font-size: 65.25px;
+                }
+
+                @include breakpoint(max-md) {
+                    font-size: 48.25px;
+                    line-height: 75px;
+                }
+
+                @include breakpoint(max-xl) {
+                    font-size: 39.25px;
+                    line-height: 47px;
+                }
+
+                @include breakpoint(max-xxs) {
+                    font-size: 34.25px;
+                    line-height: 40px;
+                }
+
+                @include breakpoint(max-xsmall) {
+                    font-size: 30.25px;
+                    line-height: 35px;
+                }
+            }
+
+            p {
+                color: rgba(0, 0, 0, 0.70);
+                max-width: 485px;
+
+                @include breakpoint(max-lg) {
+                    max-width: 700px;
+                }
+            }
+        }
+    }
+}

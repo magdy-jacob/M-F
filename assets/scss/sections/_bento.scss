@@ -1,0 +1,129 @@
+.bento-wrapper {
+    &.style1 {
+        .bento-left-part {
+            margin-top: 14px;
+            .counter {
+                display: flex;
+                justify-content: space-around;
+                padding: 40px 0;
+                background: $theme-color;
+                border-radius: 20px;
+                margin-bottom: 30px;
+                @include breakpoint(max-xxs) {
+                    flex-direction: column;
+                    text-align: center;
+                    row-gap: 20px;
+                }
+                .counter-item {
+                    span {
+                        color: $black;
+                        font-family: $title-font;
+                        font-size: 56px;
+                        font-weight: 700;
+                        line-height: 66px;
+                    }
+                    p {
+                        color: rgba(0, 0, 0, 0.70);
+                        margin-top: 10px;
+                    }
+                }
+            }
+            .bento-service {
+                padding: 40px 0 160px 40px;
+                background: $black;
+                border-radius: 20px;
+                position: relative;
+                .bg-thumb {
+                    position: absolute;
+                    right: 0;
+                    bottom: 0;
+                    @include breakpoint(max-xs) {
+                        right: -80px;
+                    }
+                    @include breakpoint(max-xxs) {
+                        right: -120px;
+                    }
+                    img {
+                        max-width: 100%;
+                        max-height: auto;
+                        @include breakpoint(max-md) {
+                            width: 76%;
+                        }
+                        @include breakpoint(max-xxs) {
+                            width: 60%;
+                        }
+                    }
+                }
+                .content {
+                    .sub-title {
+                        p {
+                            color: $white;
+                            margin-bottom: 20px;
+                        }
+                    }
+                    h3 {
+                        color: $white;
+                        margin-bottom: 20px;
+                    }
+                    p {
+                        color: $white;
+                        margin-bottom: 33px;
+                        max-width: 385px;
+                    }
+                }
+            }
+        }
+        .bento-right-part {
+            .thumb-box {
+                position: relative;
+                .thumb {
+                    position: relative;
+                    z-index: 1;
+                    @include breakpoint(max-xxl) {
+                        margin-top: 56px;
+                    }
+                    img {
+                        max-width: 100%;
+                        max-height: 100%;
+                        border-radius: 20px;
+                        @include breakpoint(max-xl) {
+                            width: 100%;
+                        }
+                    }
+                    .overlay {
+                        width: 100%;
+                        height: 100%;
+                        border-radius: 20px;
+                        opacity: 0.5;
+                        background: var(--Gray-900, #000);
+                        position: absolute;
+                        z-index: 2;
+                        top: 0;
+                        left: 0;
+                    }
+                }
+            }
+            .thumb-content {
+                position: absolute;
+                z-index: 99;
+                top: 50%;
+                text-align: center;
+                left: 117px;
+                right: 118px;
+                @include breakpoint(max-xxs) {
+                    left: 80px;
+                    right: 80px;
+                }
+                @include breakpoint(max-xsmall) {
+                    left: 55px;
+                    right: 55px;
+                }
+                h3 {
+                    color: $white;
+                    margin-bottom: 30px;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
