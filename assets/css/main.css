@@ -59,12 +59,12 @@ Description: Pyrion - Factory & Industry Html Templatee  <
 /*----------------------------------------------
     # All Variables here
 ----------------------------------------------*/
-@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Space+Grotesk:wght@300..700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@100..900&display=swap');
 :root {
   --body: #fff;
   --black: #000;
   --white: #fff;
-  --theme: #FFB26E;
+  --theme: #9b0e2b;
   --theme2: #FAF8F3;
   --header: #241442;
   --title: #131313;
@@ -86,7 +86,7 @@ Description: Pyrion - Factory & Industry Html Templatee  <
     Template Default Fonts & Fonts Styles
  ---------------------------------------------- */
 body {
-  font-family: "Lexend", sans-serif;
+  font-family: "Noto Sans Arabic", sans-serif;
   font-size: 16px;
   font-weight: normal;
   line-height: 28px;
@@ -124,7 +124,8 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Space Grotesk", sans-serif;
+  font-family: "Noto Sans Arabic", sans-serif;
+
   margin: 0px;
   padding: 0;
   color: var(--header);
@@ -143,7 +144,8 @@ h1 {
 }
 
 h2 {
-  font-family: "Space Grotesk", sans-serif;
+  font-family: "Noto Sans Arabic", sans-serif;
+
   font-size: 95.25px;
   font-weight: 700;
   line-height: 96px;
@@ -162,7 +164,8 @@ h2 {
 }
 
 h3 {
-  font-family: "Space Grotesk", sans-serif;
+  font-family: "Noto Sans Arabic", sans-serif;
+
   font-size: 31.75px;
   font-weight: 700;
   line-height: 32px;
@@ -176,7 +179,8 @@ h3 {
 }
 
 h4 {
-  font-family: "Space Grotesk", sans-serif;
+  font-family: "Noto Sans Arabic", sans-serif;
+
   font-size: 23.625px;
   font-weight: 700;
   line-height: 28.8px;
@@ -189,7 +193,8 @@ h4 {
 }
 
 h5 {
-  font-family: "Space Grotesk", sans-serif;
+  font-family: "Noto Sans Arabic", sans-serif;
+
   font-size: 18px;
   font-weight: 700;
   line-height: 18px;
@@ -202,7 +207,8 @@ h6 {
 }
 
 h2 a {
-  font-family: "Space Grotesk", sans-serif;
+  font-family: "Noto Sans Arabic", sans-serif;
+
   font-size: 95.25px;
   font-weight: 700;
   line-height: 96px;
@@ -221,7 +227,8 @@ h2 a {
 }
 
 h3 a {
-  font-family: "Space Grotesk", sans-serif;
+  font-family: "Noto Sans Arabic", sans-serif;
+
   font-size: 31.75px;
   font-weight: 700;
   line-height: 32px;
@@ -235,7 +242,8 @@ h3 a {
 }
 
 h4 a {
-  font-family: "Space Grotesk", sans-serif;
+  font-family: "Noto Sans Arabic", sans-serif;
+
   font-size: 23.625px;
   font-weight: 700;
   line-height: 28.8px;
@@ -243,7 +251,8 @@ h4 a {
 }
 
 h5 a {
-  font-family: "Space Grotesk", sans-serif;
+  font-family: "Noto Sans Arabic", sans-serif;
+
   font-size: 18px;
   font-weight: 700;
   line-height: 18px;
@@ -269,7 +278,8 @@ a:hover {
 p {
   margin: 0px;
   transition: all 0.4s ease-in-out;
-  font-family: "Lexend", sans-serif;
+  font-family: "Noto Sans Arabic", sans-serif;
+
   font-size: 16px;
   font-weight: 400;
   line-height: 21.6px;
@@ -281,7 +291,8 @@ span {
 }
 
 span a {
-  font-family: "Lexend", sans-serif;
+  font-family: "Noto Sans Arabic", sans-serif;
+
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -292,12 +303,21 @@ span a {
 /*----------------------------------------------
     # Buttons style here
 ----------------------------------------------*/
+.header-left .logo img{
+  width: 100%;
+}
+@media (max-width: 450px) {
+  .header-left .logo img{
+    width: 80%;
+  }
+}
 .gt-btn.style1 {
   display: inline-block;
   position: relative;
   z-index: 99;
   overflow: hidden;
-  font-family: "Space Grotesk", sans-serif;
+  font-family: "Noto Sans Arabic", sans-serif;
+
   color: var(--white);
   font-size: 18px;
   font-weight: 700;
@@ -355,7 +375,8 @@ span a {
   position: relative;
   z-index: 1;
   overflow: hidden;
-  font-family: "Space Grotesk", sans-serif;
+  font-family: "Noto Sans Arabic", sans-serif;
+
   color: var(--black);
   font-size: 18px;
   font-weight: 700;
@@ -413,7 +434,8 @@ span a {
   position: relative;
   z-index: 1;
   overflow: hidden;
-  font-family: "Space Grotesk", sans-serif;
+  font-family: "Noto Sans Arabic", sans-serif;
+
   color: var(--white);
   font-size: 18px;
   font-weight: 700;
@@ -471,8 +493,8 @@ span a {
   position: relative;
   z-index: 1;
   overflow: hidden;
-  font-family: "Space Grotesk", sans-serif;
-  color: var(--black);
+  font-family: "Noto Sans Arabic", sans-serif;
+  color: var(--white);
   font-size: 18px;
   font-weight: 700;
   line-height: 18px;
@@ -526,7 +548,8 @@ span a {
 }
 .gt-btn.style5 {
   color: var(--white);
-  font-family: "Space Grotesk", sans-serif;
+  font-family: "Noto Sans Arabic", sans-serif;
+
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
@@ -550,7 +573,8 @@ span a {
 }
 .gt-btn.style6 {
   color: var(--black);
-  font-family: "Space Grotesk", sans-serif;
+  font-family: "Noto Sans Arabic", sans-serif;
+
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
@@ -740,6 +764,12 @@ span a {
 .img-custom-anim-right {
   animation: img-anim-right 1.3s forwards cubic-bezier(0.645, 0.045, 0.355, 1) 0.4s;
   opacity: 0;
+}
+
+@media (max-width: 424px) {
+  .bento-wrapper.style1 .bento-right-part .thumb-content{
+    top: 30% !important;
+  }
 }
 
 @keyframes img-anim-right {
@@ -2590,7 +2620,8 @@ span a {
   content: attr(data-text-preloader);
   left: 0;
   opacity: 0;
-  font-family: "Space Grotesk", sans-serif;
+  font-family: "Noto Sans Arabic", sans-serif;
+
   position: absolute;
   top: -3px;
   transform: rotateY(-90deg);
@@ -2904,7 +2935,8 @@ span a {
 }
 .fancy-box.style1 .item h5 {
   color: var(--title);
-  font-family: "Space Grotesk", sans-serif;
+  font-family: "Noto Sans Arabic", sans-serif;
+
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
@@ -2913,7 +2945,8 @@ span a {
 }
 .fancy-box.style1 .item p {
   color: var(--text);
-  font-family: "Lexend", sans-serif;
+  font-family: "Noto Sans Arabic", sans-serif;
+
   font-size: 16px;
   font-style: normal;
   font-weight: 300;
@@ -2936,7 +2969,8 @@ span a {
 }
 .fancy-box.style2 .item h4 {
   color: var(--title);
-  font-family: "Space Grotesk", sans-serif;
+  font-family: "Noto Sans Arabic", sans-serif;
+
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
@@ -2945,7 +2979,8 @@ span a {
 }
 .fancy-box.style2 .item span {
   color: var(--text);
-  font-family: "Lexend", sans-serif;
+  font-family: "Noto Sans Arabic", sans-serif;
+
   font-size: 16px;
   font-style: normal;
   font-weight: 300;
@@ -2963,7 +2998,8 @@ span a {
 }
 .fancy-box.style3 .item h6 {
   color: var(--title);
-  font-family: "Lexend", sans-serif;
+  font-family: "Noto Sans Arabic", sans-serif;
+
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -2972,7 +3008,8 @@ span a {
 }
 .fancy-box.style3 .item span {
   color: var(--title);
-  font-family: "Lexend", sans-serif;
+  font-family: "Noto Sans Arabic", sans-serif;
+
   font-size: 18px;
   font-style: normal;
   font-weight: 300;
@@ -2999,7 +3036,8 @@ span a {
 }
 .progress-wrap .progress-meta .title {
   color: var(--theme);
-  font-family: "Space Grotesk", sans-serif;
+  font-family: "Noto Sans Arabic", sans-serif;
+
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
@@ -3007,7 +3045,8 @@ span a {
 }
 .progress-wrap .progress-meta .percentage {
   color: var(--theme);
-  font-family: "Space Grotesk", sans-serif;
+  font-family: "Noto Sans Arabic", sans-serif;
+
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
@@ -3321,7 +3360,8 @@ span a {
   display: flex;
   align-items: center;
   color: var(--title);
-  font-family: "Space Grotesk", sans-serif;
+  font-family: "Noto Sans Arabic", sans-serif;
+
   font-size: 20px;
   font-style: normal;
   font-weight: 500;
@@ -3340,7 +3380,8 @@ span a {
   display: flex;
   align-items: center;
   color: var(--pra-text);
-  font-family: "Lexend", sans-serif;
+  font-family: "Noto Sans Arabic", sans-serif;
+
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -3376,7 +3417,8 @@ span a {
 }
 .about-counter-box.style1 .content .counter {
   color: var(--title);
-  font-family: "Space Grotesk", sans-serif;
+  font-family: "Noto Sans Arabic", sans-serif;
+
   font-size: 37.25px;
   font-style: normal;
   font-weight: 700;
@@ -3384,7 +3426,8 @@ span a {
 }
 .about-counter-box.style1 .content .text {
   color: var(--text);
-  font-family: "Lexend", sans-serif;
+  font-family: "Noto Sans Arabic", sans-serif;
+
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -4004,7 +4047,8 @@ span a {
   text-align: left;
   position: relative;
   color: var(--white);
-  font-family: "Lexend", sans-serif;
+  font-family: "Noto Sans Arabic", sans-serif;
+
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -4062,7 +4106,8 @@ span a {
   position: relative;
   z-index: 999;
   color: var(--title);
-  font-family: "Lexend", sans-serif;
+  font-family: "Noto Sans Arabic", sans-serif;
+
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -4421,7 +4466,8 @@ span a {
 }
 .header-top-area .header-top-wrapper .content ul li {
   color: #737373;
-  font-family: "Lexend", sans-serif;
+  font-family: "Noto Sans Arabic", sans-serif;
+
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -4562,7 +4608,8 @@ span a {
 }
 .breadcumb .page-heading .breadcrumb-items li {
   color: var(--white);
-  font-family: "Space Grotesk", sans-serif;
+  font-family: "Noto Sans Arabic", sans-serif;
+
   font-size: 23.625px;
   font-style: normal;
   font-weight: 700;
@@ -4571,7 +4618,8 @@ span a {
 }
 .breadcumb .page-heading .breadcrumb-items li a {
   color: var(--white);
-  font-family: "Space Grotesk", sans-serif;
+  font-family: "Noto Sans Arabic", sans-serif;
+
   font-size: 23.625px;
   font-style: normal;
   font-weight: 700;
@@ -4686,7 +4734,8 @@ span a {
 }
 .footer-section .footer-widgets-wrapper.style1 .widget .single-widget .footer-contact-menu .contact-item a {
   color: var(--black);
-  font-family: "Space Grotesk", sans-serif;
+  font-family: "Noto Sans Arabic", sans-serif;
+
   font-size: 23.625px;
   font-style: normal;
   font-weight: 700;
@@ -4708,7 +4757,8 @@ span a {
 .footer-section .footer-widgets-wrapper.style2 .footer-top-part .content h2 {
   color: var(--white);
   text-align: center;
-  font-family: "Space Grotesk";
+  font-family: "Noto Sans Arabic", sans-serif;
+
   font-size: 56px;
   font-style: normal;
   font-weight: 700;
@@ -4796,7 +4846,8 @@ span a {
 }
 .footer-section .footer-widgets-wrapper.style2 .middle-part .single-widget .content nav ul li a {
   color: var(--white);
-  font-family: "Lexend", sans-serif;
+  font-family: "Noto Sans Arabic", sans-serif;
+
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -4881,7 +4932,8 @@ span a {
 }
 .footer-section .footer-widgets-wrapper.style2 .middle-part .single-widget .content .contact-item a {
   color: var(--white);
-  font-family: "Space Grotesk", sans-serif;
+  font-family: "Noto Sans Arabic", sans-serif;
+
   font-size: 23.625px;
   font-style: normal;
   font-weight: 700;
@@ -4902,7 +4954,8 @@ span a {
 }
 .footer-section .footer-bottom .footer-bottom-wrapper.style1 P a {
   color: rgba(0, 0, 0, 0.7);
-  font-family: "Lexend", sans-serif;
+  font-family: "Noto Sans Arabic", sans-serif;
+
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -4924,7 +4977,8 @@ span a {
 }
 .footer-section .footer-bottom .footer-bottom-wrapper.style1 .footer-services li a {
   color: var(--black);
-  font-family: "Lexend", sans-serif;
+  font-family: "Noto Sans Arabic", sans-serif;
+
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -4944,7 +4998,8 @@ span a {
 }
 .footer-section .footer-bottom .footer-bottom-wrapper.style2 P a {
   color: var(--white);
-  font-family: "Lexend", sans-serif;
+  font-family: "Noto Sans Arabic", sans-serif;
+
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -4956,7 +5011,8 @@ span a {
 }
 .footer-section .footer-bottom .footer-bottom-wrapper.style2 .footer-services li a {
   color: var(--white);
-  font-family: "Lexend", sans-serif;
+  font-family: "Noto Sans Arabic", sans-serif;
+
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -5107,7 +5163,8 @@ span a {
 }
 .intro-section .intro-wrapper.style1 .intro-left-part .intro-title h2 {
   color: var(--white);
-  font-family: "Space Grotesk", sans-serif;
+  font-family: "Noto Sans Arabic", sans-serif;
+
   font-size: 79.632px;
   font-style: normal;
   font-weight: 700;
@@ -5387,7 +5444,8 @@ span a {
 .intro-section .intro-wrapper.style2 .intro-slider-content .intro-title .sub-title h6 {
   color: var(--white);
   text-align: center;
-  font-family: "Space Grotesk", sans-serif;
+  font-family: "Noto Sans Arabic", sans-serif;
+
   font-size: 14px;
   font-style: normal;
   font-weight: 700;
@@ -5611,7 +5669,8 @@ span a {
 }
 .about-wrapper.style2 .right-content ul li {
   color: rgba(0, 0, 0, 0.7);
-  font-family: "Lexend", sans-serif;
+  font-family: "Noto Sans Arabic", sans-serif;
+
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -5768,7 +5827,8 @@ span a {
   display: inline-flex;
   padding: 10px 16px;
   color: var(--title);
-  font-family: "Space Grotesk", sans-serif;
+  font-family: "Noto Sans Arabic", sans-serif;
+
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -5820,7 +5880,8 @@ span a {
 }
 .recent-post-area .recent-items .recent-content ul li {
   color: var(--theme);
-  font-family: "Space Grotesk", sans-serif;
+  font-family: "Noto Sans Arabic", sans-serif;
+
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -5836,7 +5897,8 @@ span a {
 }
 .recent-post-area .recent-items .recent-content h6 a {
   color: var(--title);
-  font-family: "Space Grotesk", sans-serif;
+  font-family: "Noto Sans Arabic", sans-serif;
+
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
@@ -5967,11 +6029,15 @@ span a {
     margin-bottom: 20px;
   }
 }
-.service-card.style1 .content h3 a {
+.service-card.style1 .content h3 {
   color: var(--black);
+  translate: all .3s ease-in-out;
+}
+.service-card.style1 .content h3:hover {
+  color: var(--theme);
 }
 @media (max-width: 1399px) {
-  .service-card.style1 .content h3 a {
+  .service-card.style1 .content h3 {
     font-size: 25px;
   }
 }
@@ -5993,7 +6059,8 @@ span a {
 }
 .service-card.style1 .content .icon-box span {
   color: rgba(0, 0, 0, 0.1);
-  font-family: "Space Grotesk", sans-serif;
+  font-family: "Noto Sans Arabic", sans-serif;
+
   font-size: 31.75px;
   font-style: normal;
   font-weight: 700;
@@ -6153,7 +6220,7 @@ span a {
   align-items: center;
   justify-content: center;
   gap: 65px;
-  background: rgba(255, 178, 110, 0.8);
+  background: var(--theme);
   border-radius: 0px 0px 20px 20px;
 }
 @media (max-width: 991px) {
@@ -6259,7 +6326,8 @@ span a {
 }
 .team-card.style2 .content .title h6 {
   color: rgba(0, 0, 0, 0.7);
-  font-family: "Lexend", sans-serif;
+  font-family: "Noto Sans Arabic", sans-serif;
+
   font-size: 16px;
   font-weight: 400;
   line-height: 21.6px;
@@ -6433,7 +6501,8 @@ span a {
 }
 .blog-card.style1 .meta-content .meta a {
   color: rgba(0, 0, 0, 0.7);
-  font-family: "Lexend", sans-serif;
+  font-family: "Noto Sans Arabic", sans-serif;
+
   font-size: 16px;
   font-weight: 400;
   line-height: 21.6px;
@@ -6605,7 +6674,8 @@ span a {
 }
 .blog-card.style2 .meta-content .meta a {
   color: rgba(0, 0, 0, 0.7);
-  font-family: "Lexend", sans-serif;
+  font-family: "Noto Sans Arabic", sans-serif;
+
   font-size: 16px;
   font-weight: 400;
   line-height: 21.6px;
@@ -6693,7 +6763,8 @@ span a {
 }
 .blog-card.style3 .meta-content .meta a {
   color: rgba(0, 0, 0, 0.7);
-  font-family: "Lexend", sans-serif;
+  font-family: "Noto Sans Arabic", sans-serif;
+
   font-size: 16px;
   font-weight: 400;
   line-height: 21.6px;
@@ -6743,7 +6814,8 @@ span a {
   font-style: normal;
   font-weight: 700;
   line-height: 66px;
-  font-family: "Space Grotesk";
+  font-family: "Noto Sans Arabic", sans-serif;
+
   text-transform: capitalize;
   color: var(--black);
 }
@@ -6830,13 +6902,15 @@ span a {
 }
 .message-right-part .contact-form form input[type=text],
 .message-right-part .contact-form form input[type=email],
+.message-right-part .contact-form form input[type=number],
 .message-right-part .contact-form form select {
   width: 100%;
   padding: 15px 30px 17px 30px;
   border-radius: 999px;
   border: 1px solid #232323;
   color: var(--white);
-  font-family: "Lexend", sans-serif;
+  font-family: "Noto Sans Arabic", sans-serif;
+
   font-size: 16px;
   font-weight: 400;
   line-height: 21.6px;
@@ -6845,6 +6919,7 @@ span a {
 }
 .message-right-part .contact-form form input[type=text]::placeholder,
 .message-right-part .contact-form form input[type=email]::placeholder,
+.message-right-part .contact-form form input[type=number]::placeholder,
 .message-right-part .contact-form form select::placeholder {
   color: var(--white);
   font-size: 16px;
@@ -6864,7 +6939,8 @@ span a {
   border-radius: 20px;
   border: 1px solid #232323;
   color: var(--white);
-  font-family: "Lexend", sans-serif;
+  font-family: "Noto Sans Arabic", sans-serif;
+
   font-size: 16px;
   font-weight: 400;
   line-height: 21.6px;
@@ -6905,13 +6981,15 @@ span a {
 }
 .contact-right-part .contact-form form input[type=text],
 .contact-right-part .contact-form form input[type=email],
+.contact-right-part .contact-form form input[type=number],
 .contact-right-part .contact-form form select {
   width: 100%;
   padding: 15px 30px 17px 30px;
   border-radius: 999px;
   border: 1px solid #232323;
   color: var(--black);
-  font-family: "Lexend", sans-serif;
+  font-family: "Noto Sans Arabic", sans-serif;
+
   font-size: 16px;
   font-weight: 400;
   line-height: 21.6px;
@@ -6920,6 +6998,7 @@ span a {
 }
 .contact-right-part .contact-form form input[type=text]::placeholder,
 .contact-right-part .contact-form form input[type=email]::placeholder,
+.contact-right-part .contact-form form input[type=number]::placeholder,
 .contact-right-part .contact-form form select::placeholder {
   color: var(--black);
   font-size: 16px;
@@ -6939,7 +7018,8 @@ span a {
   border-radius: 20px;
   border: 1px solid #232323;
   color: var(--black);
-  font-family: "Lexend", sans-serif;
+  font-family: "Noto Sans Arabic", sans-serif;
+
   font-size: 16px;
   font-weight: 400;
   line-height: 21.6px;
@@ -7227,7 +7307,7 @@ span a {
   height: 100%;
   border-radius: 20px;
   opacity: 0.5;
-  background: var(--Gray-900, #000);
+  background: #6d000073;
   position: absolute;
   z-index: 2;
   top: 0;
@@ -7283,6 +7363,10 @@ span a {
 }
 .video-box-area .video-box .play-btn > i {
   display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-80%,-150%);
   width: 80px;
   height: 80px;
   line-height: 70px;
@@ -7325,6 +7409,7 @@ span a {
   display: flex;
   align-items: center;
   gap: 10px;
+  color: var(--white);
 }
 .video-btn a span {
   width: 50px;
@@ -7369,7 +7454,8 @@ span a {
 }
 .accordion.style1 .accordion-item .accordion-button .title span {
   color: var(--Gray-900, #000);
-  font-family: "Space Grotesk";
+  font-family: "Noto Sans Arabic", sans-serif;
+
   font-size: 31.75px;
   font-style: normal;
   font-weight: 700;
@@ -7402,7 +7488,8 @@ span a {
 }
 .accordion.style1 .accordion-item .accordion-button a {
   color: var(--Gray-900, #000);
-  font-family: "Space Grotesk";
+  font-family: "Noto Sans Arabic", sans-serif;
+
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
@@ -7500,7 +7587,8 @@ span a {
   border-bottom: 1px solid #D0D0D0;
   background: transparent;
   color: rgba(0, 0, 0, 0.7);
-  font-family: "Lexend", sans-serif;
+  font-family: "Noto Sans Arabic", sans-serif;
+
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -7551,7 +7639,8 @@ span a {
 }
 .accordion.style3 .accordion-item .accordion-collapse .accordion-body p {
   color: rgba(0, 0, 0, 0.7);
-  font-family: "Lexend", sans-serif;
+  font-family: "Noto Sans Arabic", sans-serif;
+
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -7601,7 +7690,8 @@ span a {
 }
 .accordion.style1 .accordion-items .accordion-header span {
   color: var(--Gray-900, #000);
-  font-family: "Space Grotesk", sans-serif;
+  font-family: "Noto Sans Arabic", sans-serif;
+
   font-size: 31.75px;
   font-style: normal;
   font-weight: 700;
@@ -7634,7 +7724,8 @@ span a {
 }
 .accordion.style1 .accordion-items .accordion-header .view-more {
   color: var(--title);
-  font-family: "Space Grotesk";
+  font-family: "Noto Sans Arabic", sans-serif;
+
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
@@ -7706,7 +7797,8 @@ span a {
 }
 .accordion.style2 .accordion-items .accordion-header span {
   color: var(--Gray-900, #000);
-  font-family: "Space Grotesk", sans-serif;
+  font-family: "Noto Sans Arabic", sans-serif;
+
   font-size: 31.75px;
   font-style: normal;
   font-weight: 700;
@@ -7749,7 +7841,8 @@ span a {
 }
 .accordion.style2 .accordion-items .accordion-header .view-more {
   color: var(--title);
-  font-family: "Space Grotesk";
+  font-family: "Noto Sans Arabic", sans-serif;
+
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
@@ -7798,7 +7891,8 @@ span a {
 .skill .progress-bar-wrapper .progress-info .progress-title {
   flex: 1;
   color: var(--black);
-  font-family: "Space Grotesk", sans-serif;
+  font-family: "Noto Sans Arabic", sans-serif;
+
   font-size: 23.625px;
   font-weight: 700;
   line-height: 28.8px;
@@ -7825,7 +7919,8 @@ span a {
 }
 .skill .progress-bar-wrapper .progress-info .progress-percent {
   color: rgba(0, 0, 0, 0.7);
-  font-family: "Lexend", sans-serif;
+  font-family: "Noto Sans Arabic", sans-serif;
+
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -7970,7 +8065,8 @@ span a {
   -webkit-text-stroke-width: 3px;
   -webkit-text-stroke-color: rgba(0, 0, 0, 0.7);
   color: transparent;
-  font-family: "Space Grotesk", sans-serif;
+  font-family: "Noto Sans Arabic", sans-serif;
+
   font-size: 95.25px;
   font-style: normal;
   font-weight: 700;
@@ -8018,7 +8114,8 @@ span a {
 }
 .counter-wrapper.style1 .counter-inner-wrapper .contain-box .title h6 {
   color: rgba(0, 0, 0, 0.7);
-  font-family: "Lexend", sans-serif;
+  font-family: "Noto Sans Arabic", sans-serif;
+
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -8141,7 +8238,8 @@ span a {
   -webkit-text-stroke-width: 3px;
   -webkit-text-stroke-color: var(--white);
   color: transparent;
-  font-family: "Space Grotesk", sans-serif;
+  font-family: "Noto Sans Arabic", sans-serif;
+
   font-size: 95.25px;
   font-style: normal;
   font-weight: 700;
@@ -8189,7 +8287,8 @@ span a {
 }
 .counter-wrapper.style2 .counter-inner-wrapper .contain-box .title h6 {
   color: var(--white);
-  font-family: "Lexend", sans-serif;
+  font-family: "Noto Sans Arabic", sans-serif;
+
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -8615,7 +8714,8 @@ span a {
 }
 .scrolling-wrap .comm .cmn-textslide-1 {
   color: var(--white);
-  font-family: "Space Grotesk", sans-serif;
+  font-family: "Noto Sans Arabic", sans-serif;
+
   font-size: 95.25px;
   font-weight: 700;
   line-height: 96px;
@@ -8639,7 +8739,8 @@ span a {
 }
 .scrolling-wrap .comm .cmn-textslide-2 {
   color: var(--white);
-  font-family: "Space Grotesk", sans-serif;
+  font-family: "Noto Sans Arabic", sans-serif;
+
   font-size: 95.25px;
   font-weight: 700;
   line-height: 96px;
@@ -8803,7 +8904,8 @@ span a {
 }
 .sidebar-widget .single-widget .search-container .search-box input::placeholder {
   color: rgba(0, 0, 0, 0.7);
-  font-family: "Lexend", sans-serif;
+  font-family: "Noto Sans Arabic", sans-serif;
+
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -8928,7 +9030,8 @@ span a {
 }
 .sidebar-widget .single-widget .tagcloud .tagcloud-item a {
   color: rgba(0, 0, 0, 0.7);
-  font-family: "Lexend", sans-serif;
+  font-family: "Noto Sans Arabic", sans-serif;
+
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -9001,7 +9104,8 @@ span a {
   border-radius: 50%;
   display: inline-block;
   color: var(--Gray-900, #000);
-  font-family: "Space Grotesk";
+  font-family: "Noto Sans Arabic", sans-serif;
+
   font-size: 23.625px;
   font-style: normal;
   font-weight: 700;
@@ -9255,7 +9359,8 @@ span a {
 }
 .bento-wrapper.style1 .bento-left-part .counter .counter-item span {
   color: var(--black);
-  font-family: "Space Grotesk", sans-serif;
+  font-family: "Noto Sans Arabic", sans-serif;
+
   font-size: 56px;
   font-weight: 700;
   line-height: 66px;
@@ -9339,7 +9444,7 @@ span a {
   height: 100%;
   border-radius: 20px;
   opacity: 0.5;
-  background: var(--Gray-900, #000);
+  background: #6d000073;
   position: absolute;
   z-index: 2;
   top: 0;
@@ -9438,7 +9543,6 @@ span a {
 }
 .cta-wrapper.style1 .cta-inner .cta-title {
   border-left: 1px solid var(--theme);
-  border-right: 1px solid var(--theme);
   padding: 0 16px 0 54px;
   max-width: 547px;
 }
@@ -9456,7 +9560,8 @@ span a {
 }
 .cta-wrapper.style1 .cta-inner .cta-title h3 {
   color: var(--white);
-  font-family: "Space Grotesk", sans-serif;
+  font-family: "Noto Sans Arabic", sans-serif;
+
   font-size: 36px;
   font-weight: 700;
   line-height: 46px;
@@ -9664,7 +9769,8 @@ span a {
 }
 .service-details-wrapper .details-items .content ul li {
   color: rgba(0, 0, 0, 0.7);
-  font-family: "Lexend", sans-serif;
+  font-family: "Noto Sans Arabic", sans-serif;
+
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -9702,7 +9808,8 @@ span a {
 }
 .service-details-wrapper .manufacture-details .content h2 {
   color: var(--Gray-900, #000);
-  font-family: "Space Grotesk";
+  font-family: "Noto Sans Arabic", sans-serif;
+
   font-size: 56px;
   font-style: normal;
   font-weight: 700;
@@ -9798,7 +9905,8 @@ span a {
 .project-details-wrapper .project-details-info .sub-content ul li {
   margin-bottom: 20px;
   color: rgba(0, 0, 0, 0.7);
-  font-family: "Lexend", sans-serif;
+  font-family: "Noto Sans Arabic", sans-serif;
+
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -9875,7 +9983,8 @@ span a {
 }
 .project-details-wrapper .project-details-info .manufacture-details .content-items ul li {
   color: rgba(0, 0, 0, 0.7);
-  font-family: "Lexend", sans-serif;
+  font-family: "Noto Sans Arabic", sans-serif;
+
   font-size: 16px;
   font-style: normal;
   font-weight: 400;

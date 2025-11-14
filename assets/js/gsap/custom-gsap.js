@@ -57,7 +57,7 @@ if ($('.title-big-text').length > 0) {
 
     let mySplitText = new SplitText(".title-big-text", { type: "words,chars" });
     let chars = mySplitText.chars;
-    let endGradient = chroma.scale(['#FFB26E', '#FFB26E', '#FFB26E', '#FFB26E', '#FFB26E']);
+    let endGradient = chroma.scale(['#9b0e2b', '#9b0e2b', '#9b0e2b', '#9b0e2b', '#9b0e2b']);
     cta.to(chars, {
         duration: 0.5,
         scaleY: 0.6,
@@ -92,7 +92,7 @@ if ($('.title-big-text').length > 0) {
         duration: 0.8
     }, 0.7);
     cta.to(chars, {
-        color: '#FFB26E',
+        color: '#bd0e31',
         duration: 1.4,
         stagger: 0.05
     });

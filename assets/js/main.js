@@ -383,9 +383,8 @@ JS TABLE OF CONTENTS
     /*-----------------------------------
     12. // PreLoader  
     -----------------------------------*/
-    $(window).on("load", function () {
-      $(".preloader").addClass("loaded").delay(600).fadeOut();
-    });
+
+    $(".preloader").addClass("loaded")
 
   });
 
